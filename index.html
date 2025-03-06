@@ -12,5 +12,27 @@
 <body>
     <h1>Aprendiendo JavaScript</h1>
     <div id="datos"></div>
+
+    <!--Como un atributo en el elemento-->
+    <button onclick="alert('click')">
+        CLICK ME
+    </button>
+
+    <!--Como un bloque script-->
+    <script>
+        const colores = ["amarillo","verde","azul"]
+        
+        //For IN imprime las llaves
+        console.log("for in")
+        for(let key in colores){
+            console.log(key)
+        }
+
+        //For OF imprime los valores del objeto
+        console.log("for of")
+        for(let color of colores){
+            console.log(color)
+        }
+    </script>
 </body>
 </html>
