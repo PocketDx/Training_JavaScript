@@ -5,5 +5,4 @@ var altura = 168;
 
 var concatenacion = nombre + " " + altura;
 
-var datos = document.getElementById('datos');
-datos.innerHTML = concatenacion;
+var datos = document.getElementById('datos')
