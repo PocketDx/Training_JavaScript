@@ -32,3 +32,14 @@ Es un lenguaje de programación interpretado y orientado a objetos. Se ejecuta e
 * Tomar decisiones con if, else, y switch.
 * Repetir bloques de código usando bucles (for, while, do...while).
 * Aplicar operadores lógicos y relacionales.
+
+* * 
+
+- - - 
+
+***
+
+---
+
+___
+
