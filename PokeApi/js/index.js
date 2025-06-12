@@ -1,4 +1,3 @@
-const listaPokemon = document.getElementById("listaPokemon");
 const URLpokemon = "https://pokeapi.co/api/v2/type";
 
 /**
@@ -25,9 +24,13 @@ fetch(URLpokemon)
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        data.results.forEach(tipo =>{
-            const li = document.createElement("li");
-            li.textContent = tipo.name;
-            listaPokemon.appendChild(li);
-        })
+        data.results.forEach((tipo) => {
+            crearFiltros(tipo.name);
+        });
     });
+
+function crearFiltros(tipo){
+    const btn = document.getElementById("filtro");
+    btn.addEventListener("click", () => {
+    });
+}
