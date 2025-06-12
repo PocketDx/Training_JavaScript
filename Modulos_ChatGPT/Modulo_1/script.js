@@ -35,3 +35,45 @@ function calcularEdad(anioNacimiento, anioActual) {
     console.log(`La edad es ${anioActual - anioNacimiento} años`);
 }
 calcularEdad(anioNacimiento, anioActual); // Llamada a la función
+
+// Condicionales
+
+// IF
+const edadUsuario = 18;
+if (edadUsuario >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+
+// SWITCH
+const dia = "Lunes";
+switch (dia) {
+    case "Lunes":
+        console.log("Hoy es lunes");
+        break;
+    case "Miércoles":
+        console.log("Es mitad de semana");
+        break;
+    default:
+        console.log("No es lunes o miércoles");
+}
+
+// Bucle FOR
+for (let i = 0; i < 5; i++) {
+    console.log("Ciclo: #" + i);
+}
+
+// Bucle WHILE
+let contador = 1;
+while (contador < 5) {
+    console.log("Contador: " + contador);
+    contador++;
+}
+
+// Bucle DO WHILE
+let contadorDo = 1;
+do {
+    console.log("Contador Do: " + contadorDo);
+    contadorDo++;
+} while (contadorDo < 5);

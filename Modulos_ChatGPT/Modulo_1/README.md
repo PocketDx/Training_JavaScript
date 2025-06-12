@@ -22,17 +22,20 @@ Es un lenguaje de programación interpretado y orientado a objetos. Se ejecuta e
 * Aplicar buenas prácticas de nombrado.
 * Realizar operaciones básicas con datos.
 
----
-
-*🧩 Sitios Para Practicar*
+**🧩 Sitios Para Practicar**
 - [Playcode](https://playcode.io/learn)
 - [Codepen](https://codepen.io)
 - [Replit](https://replit.com)
-
----
 
 ## 🎨 Semana 3: Estructuras de Control
 ### 🎯 Objetivos:
 * Tomar decisiones con if, else, y switch.
 * Repetir bloques de código usando bucles (for, while, do...while).
 * Aplicar operadores lógicos y relacionales.
+
+## 👓 Semana 4: Funciones y Alcance (Scope)
+### 🎯 Objetivos:
+* Entender qué es una función y por qué se usa.
+* Aprender a declarar y usar funciones.
+* Comprender el alcance de variables (scope).
+* Aplicar buenas prácticas para organizar código.
