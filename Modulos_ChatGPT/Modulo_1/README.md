@@ -23,9 +23,9 @@ Es un lenguaje de programación interpretado y orientado a objetos. Se ejecuta e
 * Realizar operaciones básicas con datos.
 
 *Sitios Para Practicar*
-[Playcode](https://playcode.io/learn)
-[Codepen](https://codepen.io)
-[Replit](https://replit.com)
+- [Playcode](https://playcode.io/learn)
+- [Codepen](https://codepen.io)
+- [Replit](https://replit.com)
 
 ## 🎨 Semana 3: Estructuras de Control
 ### 🎯 Objetivos:
