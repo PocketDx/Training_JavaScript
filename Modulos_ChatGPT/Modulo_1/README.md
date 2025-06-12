@@ -39,3 +39,18 @@ Es un lenguaje de programación interpretado y orientado a objetos. Se ejecuta e
 * Aprender a declarar y usar funciones.
 * Comprender el alcance de variables (scope).
 * Aplicar buenas prácticas para organizar código.
+
+## 🎭 Semana 5: Arreglos (Arrays)
+### 🎯 Objetivos:
+* Comprender qué es un array y cómo se utiliza.
+* Acceder, modificar y recorrer arrays.
+* Utilizar métodos útiles (push, pop, splice, slice, map, filter, etc.).
+* Usar bucles con arrays para procesamiento dinámico.
+
+## 🧨 Semana 6: Objetos en JavaScript
+### 🎯 Objetivos:
+* Comprender qué es un objeto y cómo se usa.
+* Definir objetos con propiedades y métodos.
+* Acceder y modificar datos dentro de objetos.
+* Iterar sobre objetos.
+* Combinar arrays y objetos.
