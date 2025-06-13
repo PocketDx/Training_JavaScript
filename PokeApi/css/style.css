@@ -1,0 +1,130 @@
+* {
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family:fantasy;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #4bdf27;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgb(77, 153, 216);
+}
+
+header {
+    padding-block: 1rem;
+    background-color: rgba(8, 1, 1, 0.089);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    align-items: flex-start;
+    padding-inline: 2rem;
+    max-width: 1000px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.btn {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: #4bdf27;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+}
+
+.pokemon{
+    border-radius: 5px;
+    background-color: rgba(19, 121, 238, 0.24);
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+.pokemon-imagen{
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-imagen img {
+    width: 100%;
+    max-width: 6rem;
+}
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nombre-contenedor{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poke-id{
+    background-color: rgba(152, 156, 155, 0.575);
+    border-radius: 6px;
+    padding: .25rem .5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.poke-nombre {
+    font-family: sans;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.poke-tipos {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tipo{
+    background-color: rgba(36, 230, 236, 0.932);
+    border-radius: 6px;
+    padding: .25rem .5rem;
+}
+
+.stat{
+    display: inline;
+    padding: .2rem .4rem;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 6px;
+}
