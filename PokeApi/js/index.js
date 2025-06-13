@@ -1,3 +1,4 @@
+const btn = document.getElementById("filtro");
 const botones = document.getElementById("botones");
 const listaPokemon = document.getElementById("listaPokemon");
 
@@ -34,22 +35,18 @@ fetch(URLtipo)
         });
     });
 
-for (let i = 1; i <= 120; i++) {
-    fetch(URLpokemon + i)
-    .then(response => response.json())
-    .then(pokemon => mostrarPokemon(pokemon))
-}
-
 function crearFiltros(tipo){
-    const btn = document.getElementById("filtro");
-    btn.addEventListener("click", () => {
       const btnFiltro = document.createElement("button");
-      btnFiltro.id = tipo;
       btnFiltro.className = "btn";
+      btnFiltro.id = tipo;
       btnFiltro.textContent = tipo;
       botones.appendChild(btnFiltro);
-      btn.disabled = true;
-    });
+}
+
+for (let i = 1; i <= 120; i++) {
+  fetch(URLpokemon + i)
+  .then(response => response.json())
+  .then(pokemon => mostrarPokemon(pokemon))
 }
 
 function mostrarPokemon(pokemon) {
@@ -76,6 +73,19 @@ function mostrarPokemon(pokemon) {
     listaPokemon.appendChild(div);
 }
 
-function filtrarPokemon() {
-  const btn = document.getElementById("filtro");
-}
+const btnFiltro = document.getElementsByClassName("btn")
+console.log(btnFiltro)
+Array.from(btnFiltro)
+btn.addEventListener("click", (event) => {
+  const btnId = event.currentTarget.id
+  for (let i = 1; i <= 120; i++) {
+    fetch(URLpokemon + i)
+    .then(response => response.json())
+    .then(data => {
+      const tipos = data.types.map(type => type.type.name);
+      if (tipos.some(tipo => tipo.includes(btnId))) {
+        mostrarPokemon(data);
+      }
+    })
+  }
+ })

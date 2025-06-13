@@ -13,6 +13,7 @@ button {
     border-radius: 12px;
     padding: 0.5rem;
     box-shadow: 0 0 10px rgb(77, 153, 216);
+    transition: .3s;
 }
 
 header {
@@ -43,6 +44,12 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     transition: .2s;
+}
+
+#filtro:hover{
+    background-color: #4bdf27;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 .btn:hover {
