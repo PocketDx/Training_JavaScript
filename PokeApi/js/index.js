@@ -81,7 +81,7 @@ listaBotones.addEventListener("click", (event) => {
       fetch(URLpokemon + i)
       .then(response => response.json())
       .then(data => {
-        const tipos = data.types.map(type => type.type.name);
+        const tipos = data.types.map(tipo => tipo.type.name);
         if (tipos.some(tipo => tipo.includes(btnId))) {
           mostrarPokemon(data);
         }
