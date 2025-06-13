@@ -1,5 +1,4 @@
-const btn = document.getElementById("filtro");
-const botones = document.getElementById("botones");
+const listaBotones = document.getElementById("botones");
 const listaPokemon = document.getElementById("listaPokemon");
 
 const URLtipo = "https://pokeapi.co/api/v2/type";
@@ -40,7 +39,7 @@ function crearFiltros(tipo){
       btnFiltro.className = "btn";
       btnFiltro.id = tipo;
       btnFiltro.textContent = tipo;
-      botones.appendChild(btnFiltro);
+      listaBotones.appendChild(btnFiltro);
 }
 
 for (let i = 1; i <= 120; i++) {
@@ -73,19 +72,15 @@ function mostrarPokemon(pokemon) {
     listaPokemon.appendChild(div);
 }
 
-const btnFiltro = document.getElementsByClassName("btn")
-console.log(btnFiltro)
-Array.from(btnFiltro)
-btn.addEventListener("click", (event) => {
-  const btnId = event.currentTarget.id
-  for (let i = 1; i <= 120; i++) {
-    fetch(URLpokemon + i)
-    .then(response => response.json())
-    .then(data => {
-      const tipos = data.types.map(type => type.type.name);
-      if (tipos.some(tipo => tipo.includes(btnId))) {
-        mostrarPokemon(data);
-      }
-    })
-  }
- })
+/** 
+for (let i = 1; i <= 120; i++) {
+  fetch(URLpokemon + i)
+  .then(response => response.json())
+  .then(data => {
+    const tipos = data.types.map(type => type.type.name);
+    if (tipos.some(tipo => tipo.includes(btnId))) {
+      mostrarPokemon(data);
+    }
+  })
+}
+  */
