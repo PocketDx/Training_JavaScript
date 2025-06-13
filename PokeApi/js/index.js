@@ -72,6 +72,24 @@ function mostrarPokemon(pokemon) {
     listaPokemon.appendChild(div);
 }
 
+// Filtrar por tipo de Pokémon
+listaBotones.addEventListener("click", (event) => {
+  const btnId = event.target.id;
+  if (btnId) {
+    listaPokemon.innerHTML = ""; // Limpiar la lista de Pokémon
+    for (let i = 1; i <= 120; i++) {
+      fetch(URLpokemon + i)
+      .then(response => response.json())
+      .then(data => {
+        const tipos = data.types.map(type => type.type.name);
+        if (tipos.some(tipo => tipo.includes(btnId))) {
+          mostrarPokemon(data);
+        }
+      })
+    }
+  }
+});
+
 /** 
 for (let i = 1; i <= 120; i++) {
   fetch(URLpokemon + i)
